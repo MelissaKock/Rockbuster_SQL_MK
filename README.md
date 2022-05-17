@@ -10,3 +10,6 @@ What was the average rental duration for all videos?
 Which countries are Rockbuster customers based in?
 Where are customers with a high lifetime value based?
 Do sales figures vary between geographic regions?
+
+
+NOTE: This project was fabricated for educational purposes by CareerFoundry.
