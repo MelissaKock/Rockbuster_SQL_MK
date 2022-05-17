@@ -1,0 +1,11 @@
+SQL Query to determine the popularity of different Genres in Rockbuster's inventory
+
+SELECT 	
+	name,
+	count(rental_id) AS Times_rented
+FROM category	
+INNER JOIN film_category ON category.category_id = film_category.category_id	
+INNER JOIN inventory ON film_category.film_id = inventory.film_id	
+INNER JOIN rental ON inventory.inventory_id = rental.inventory_id	
+GROUP BY name	
+ORDER BY count(rental_id) desc	
